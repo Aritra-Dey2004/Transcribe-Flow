@@ -40,25 +40,29 @@ This project demonstrates real-world implementation of:
 
 # 🧠 System Architecture
 
-```mermaid
-flowchart TD
+User Uploads Audio  
+↓  
+Flask Backend Server  
+↓  
+Audio Saved to Server  
+↓  
+Whisper AI Model  
+↓  
+Transcript Generated  
+↓  
+Translation Module  
+↓  
+Summarization Model  
+↓  
+Display Results to User  
+↓  
+Export as TXT or PDF  
 
-A[User Uploads Audio File] --> B[Flask Backend Server]
+---
 
-B --> C[Audio Saved to Server]
+# 📁 Project Structure
 
-C --> D[Whisper AI Model]
-
-D --> E[Transcript Generated]
-
-E --> F[Translation Module]
-
-F --> G[Summarization Model]
-
-G --> H[Display Results to User]
-
-H --> I[Export as TXT or PDF]
-📁 Project Structure
+```
 Transcribe-Flow/
 │
 ├── app.py                  # Flask backend
@@ -72,120 +76,116 @@ Transcribe-Flow/
 ├── NotoSans-Regular.ttf   # Unicode font
 ├── LICENSE
 └── README.md
-⚙️ Technology Stack
-Layer	Technology
-Frontend	HTML, CSS, JavaScript
-Backend	Flask (Python)
-AI Model	Whisper
-NLP	HuggingFace Transformers
-File Export	FPDF
-Storage	Local filesystem
-🛠️ Installation & Setup
-Clone Repository
+```
+
+---
+
+# ⚙️ Technology Stack
+
+| Layer | Technology |
+|------|------------|
+| Frontend | HTML, CSS, JavaScript |
+| Backend | Flask (Python) |
+| AI Model | Whisper |
+| NLP | HuggingFace Transformers |
+| File Export | FPDF |
+| Storage | Local filesystem |
+
+---
+
+# 🛠️ Installation & Setup
+
+## Clone Repository
+
+```
 git clone https://github.com/Aritra-Dey2004/Transcribe-Flow.git
 cd Transcribe-Flow
-Create Virtual Environment
+```
+
+## Create Virtual Environment
+
+```
 python -m venv venv
+```
 
 Activate environment:
 
 Windows:
-
+```
 venv\Scripts\activate
+```
 
 Linux/Mac:
-
+```
 source venv/bin/activate
-Install Dependencies
+```
+
+## Install Dependencies
+
+```
 pip install -r requirements.txt
-Run Application
+```
+
+## Run Application
+
+```
 python app.py
+```
 
 Open browser:
 
+```
 http://127.0.0.1:5000
-📊 Example Output
+```
+
+---
+
+# 📊 Example Output
 
 Transcript:
-
+```
 Today we discussed the project timeline and milestones.
+```
 
 Summary:
-
+```
 Discussion about project planning and execution timeline.
-🎯 Skills Demonstrated
+```
 
-Python programming
+---
 
-Flask backend development
+# 🎯 Skills Demonstrated
 
-AI model integration
+- Python programming
+- Flask backend development
+- AI model integration
+- Natural Language Processing
+- Full-stack development
+- File handling and export
+- Web application architecture
 
-Natural Language Processing
+---
 
-Full-stack development
+# 👨‍💻 Author
 
-File handling and export
+**Aritra Dey**  
+BTech Computer Science (Data Science) Student  
 
-Web application architecture
-
-👨‍💻 Author
-
-Aritra Dey
-BTech Computer Science (Data Science) Student
-
-GitHub:
+GitHub:  
 https://github.com/Aritra-Dey2004
 
-🔮 Future Improvements
+---
 
-Speaker diarization
+# 🔮 Future Improvements
 
-Real-time transcription
+- Speaker diarization
+- Real-time transcription
+- Cloud deployment
+- User authentication
+- Database integration
 
-Cloud deployment
+---
 
-User authentication
-
-Database integration
-
-📜 License
+# 📜 License
 
 MIT License
-
-
----
-
-# ✅ This fixes ALL issues:
-
-- ✔ Mermaid error fixed  
-- ✔ File tree formatting fixed  
-- ✔ Clean GitHub rendering  
-- ✔ Resume-level professional look  
-- ✔ Recruiter-ready  
-
----
-
-# 📌 Final Step
-
-Go to your repo:  
-https://github.com/Aritra-Dey2004/Transcribe-Flow
-
-Then:
-
-1. Click `README.md`
-2. Click ✏️ Edit
-3. Replace everything
-4. Click **Commit changes**
-
----
-
-If you want, I can also add:
-
-- Live demo badge  
-- Screenshots section  
-- Portfolio-level enhancements  
-
-to make it top 1% quality.
-::contentReference[oaicite:0]{index=0}
-h
