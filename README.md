@@ -55,13 +55,16 @@ This project demonstrates practical implementation of:
 - Real-time processing  
 
 ---
+
 # 🧠 System Architecture
 
+```mermaid
 flowchart TD
+
 A[User Uploads Audio] --> B[Flask Backend]
-B --> C[Whisper Model]
+B --> C[Whisper AI Model]
 C --> D[Transcript Generated]
-D --> E[Translation Model]
+D --> E[Translation Module]
 E --> F[Summarization Model]
 F --> G[Results Displayed]
 G --> H[Export TXT/PDF]
@@ -78,3 +81,61 @@ Transcribe-Flow/
 ├── NotoSans-Regular.ttf     # Unicode font support
 ├── LICENSE
 └── README.md
+⚙️ Technology Stack
+Layer	Technology
+Frontend	HTML, CSS, JavaScript
+Backend	Flask (Python)
+AI Model	Whisper
+NLP	HuggingFace Transformers
+File Export	FPDF
+Storage	Local filesystem
+🛠️ Installation & Setup
+Clone Repository
+git clone https://github.com/Aritra-Dey2004/Transcribe-Flow.git
+cd Transcribe-Flow
+Create Virtual Environment
+python -m venv venv
+
+Activate:
+
+Windows:
+
+venv\Scripts\activate
+
+Linux/Mac:
+
+source venv/bin/activate
+Install Dependencies
+pip install -r requirements.txt
+Run Application
+python app.py
+
+Open browser:
+
+http://127.0.0.1:5000
+📊 Example Output
+
+Transcript:
+
+Today we discussed the project timeline and milestones.
+
+Summary:
+
+Discussion about project planning and execution timeline.
+🎯 Skills Demonstrated
+
+This project demonstrates proficiency in:
+
+Python development
+
+Flask backend development
+
+AI model integration
+
+Natural Language Processing
+
+File handling
+
+Web application architecture
+
+Real-world AI deployment
