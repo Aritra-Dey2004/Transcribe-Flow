@@ -58,4 +58,5 @@ F --> G[Summarization Model]
 G --> H[Display Results to User]
 
 H --> I[Export as TXT or PDF]
+📁 Project Structure
 
