@@ -55,7 +55,6 @@ This project demonstrates practical implementation of:
 - Real-time processing  
 
 ---
-
 # 🧠 System Architecture
 
 ```mermaid
@@ -68,6 +67,7 @@ D --> E[Translation Module]
 E --> F[Summarization Model]
 F --> G[Results Displayed]
 G --> H[Export TXT/PDF]
+
 
 Transcribe-Flow/
 │
