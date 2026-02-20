@@ -59,4 +59,133 @@ G --> H[Display Results to User]
 
 H --> I[Export as TXT or PDF]
 📁 Project Structure
+Transcribe-Flow/
+│
+├── app.py                  # Flask backend
+├── index.html              # Frontend UI
+├── get_fonts.py            # Font downloader
+├── fix_font.py             # Font configuration
+│
+├── uploads/                # Uploaded audio files
+├── outputs/                # Generated transcripts and summaries
+│
+├── NotoSans-Regular.ttf   # Unicode font
+├── LICENSE
+└── README.md
+⚙️ Technology Stack
+Layer	Technology
+Frontend	HTML, CSS, JavaScript
+Backend	Flask (Python)
+AI Model	Whisper
+NLP	HuggingFace Transformers
+File Export	FPDF
+Storage	Local filesystem
+🛠️ Installation & Setup
+Clone Repository
+git clone https://github.com/Aritra-Dey2004/Transcribe-Flow.git
+cd Transcribe-Flow
+Create Virtual Environment
+python -m venv venv
 
+Activate environment:
+
+Windows:
+
+venv\Scripts\activate
+
+Linux/Mac:
+
+source venv/bin/activate
+Install Dependencies
+pip install -r requirements.txt
+Run Application
+python app.py
+
+Open browser:
+
+http://127.0.0.1:5000
+📊 Example Output
+
+Transcript:
+
+Today we discussed the project timeline and milestones.
+
+Summary:
+
+Discussion about project planning and execution timeline.
+🎯 Skills Demonstrated
+
+Python programming
+
+Flask backend development
+
+AI model integration
+
+Natural Language Processing
+
+Full-stack development
+
+File handling and export
+
+Web application architecture
+
+👨‍💻 Author
+
+Aritra Dey
+BTech Computer Science (Data Science) Student
+
+GitHub:
+https://github.com/Aritra-Dey2004
+
+🔮 Future Improvements
+
+Speaker diarization
+
+Real-time transcription
+
+Cloud deployment
+
+User authentication
+
+Database integration
+
+📜 License
+
+MIT License
+
+
+---
+
+# ✅ This fixes ALL issues:
+
+- ✔ Mermaid error fixed  
+- ✔ File tree formatting fixed  
+- ✔ Clean GitHub rendering  
+- ✔ Resume-level professional look  
+- ✔ Recruiter-ready  
+
+---
+
+# 📌 Final Step
+
+Go to your repo:  
+https://github.com/Aritra-Dey2004/Transcribe-Flow
+
+Then:
+
+1. Click `README.md`
+2. Click ✏️ Edit
+3. Replace everything
+4. Click **Commit changes**
+
+---
+
+If you want, I can also add:
+
+- Live demo badge  
+- Screenshots section  
+- Portfolio-level enhancements  
+
+to make it top 1% quality.
+::contentReference[oaicite:0]{index=0}
+h
