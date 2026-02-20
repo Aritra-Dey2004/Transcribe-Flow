@@ -59,17 +59,3 @@ G --> H[Display Results to User]
 
 H --> I[Export as TXT or PDF]
 
-📁 Project Structure
-Transcribe-Flow/
-│
-├── app.py                  # Flask backend
-├── index.html              # Frontend UI
-├── get_fonts.py            # Font downloader
-├── fix_font.py             # Font configuration
-│
-├── uploads/                # Uploaded audio files
-├── outputs/                # Generated transcripts and summaries
-│
-├── NotoSans-Regular.ttf   # Unicode font
-├── LICENSE
-└── README.md
