@@ -57,18 +57,14 @@ This project demonstrates practical implementation of:
 ---
 # 🧠 System Architecture
 
-```mermaid
 flowchart TD
-
 A[User Uploads Audio] --> B[Flask Backend]
-B --> C[Whisper AI Model]
+B --> C[Whisper Model]
 C --> D[Transcript Generated]
-D --> E[Translation Module]
+D --> E[Translation Model]
 E --> F[Summarization Model]
 F --> G[Results Displayed]
 G --> H[Export TXT/PDF]
-
-
 Transcribe-Flow/
 │
 ├── app.py                     # Flask backend
