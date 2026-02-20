@@ -61,13 +61,21 @@ This project demonstrates practical implementation of:
 ```mermaid
 flowchart TD
 
-A[User Uploads Audio] --> B[Flask Backend]
-B --> C[Whisper AI Model]
-C --> D[Transcript Generated]
-D --> E[Translation Module]
-E --> F[Summarization Model]
-F --> G[Results Displayed]
-G --> H[Export TXT/PDF]
+A[User Uploads Audio File] --> B[Flask Backend Server]
+
+B --> C[Audio Saved Locally]
+
+C --> D[Whisper AI Model]
+
+D --> E[Transcript Generated]
+
+E --> F[Translation Module]
+
+F --> G[Summarization Model]
+
+G --> H[Display Results to User]
+
+H --> I[Export as TXT or PDF]
 Transcribe-Flow/
 │
 ├── app.py                     # Flask backend
