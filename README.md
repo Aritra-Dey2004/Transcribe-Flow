@@ -68,3 +68,16 @@ D --> E[Translation Module]
 E --> F[Summarization Model]
 F --> G[Results Displayed]
 G --> H[Export TXT/PDF]
+Transcribe-Flow/
+│
+├── app.py                     # Flask backend
+├── index.html                 # Frontend UI
+├── get_fonts.py              # Font downloader
+├── fix_font.py               # Font configuration
+│
+├── uploads/                  # Uploaded audio files
+├── outputs/                  # Generated files
+│
+├── NotoSans-Regular.ttf     # Unicode font support
+├── LICENSE
+└── README.md
