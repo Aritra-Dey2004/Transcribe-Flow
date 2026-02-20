@@ -171,8 +171,7 @@ Discussion about project planning and execution timeline.
 **Aritra Dey**  
 BTech Computer Science (Data Science) Student  
 
-GitHub:  
-https://github.com/Aritra-Dey2004
+
 
 ---
 
