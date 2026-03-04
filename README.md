@@ -186,7 +186,63 @@ Discussion about project planning and execution timeline.
 ```
 
 ---
+## 🌍 Supported Translation Languages
 
+| Language | Code |
+|---|---|
+| English | `en` |
+| Hindi | `hi` |
+| Spanish | `es` |
+| French | `fr` |
+| German | `de` |
+| Chinese (Simplified) | `zh-CN` |
+| Japanese | `ja` |
+| Arabic | `ar` |
+
+---
+
+## 🔐 Authentication
+
+### Register
+- Requires name, email, and password
+- Phone number is optional — but once added, you can log in with it
+- Password must have: ≥ 8 characters, 1 uppercase letter, 1 special character
+
+### Login
+- Toggle between **Email** and **Phone** login in the modal
+- JWT token stored in `localStorage` (6-hour expiry)
+
+### Forgot Password
+1. Click "Forgot your password?" in the login modal
+2. Enter your registered email
+3. Check your inbox for a reset link (valid for 30 minutes)
+4. Set a new password that meets the strength requirements
+
+---
+
+## ⚙️ Configuration Reference
+
+| Variable | Description | Default |
+|---|---|---|
+| `SMTP_HOST` | SMTP server address | `smtp.gmail.com` |
+| `SMTP_PORT` | SMTP port | `587` |
+| `SMTP_USER` | Your email address | — |
+| `SMTP_PASSWORD` | App password (not your login password) | — |
+| `SMTP_FROM` | Sender address shown in email | Same as `SMTP_USER` |
+| `APP_BASE_URL` | Base URL for reset links | `http://127.0.0.1:5000` |
+
+---
+
+## 🔒 Security Notes
+
+- Passwords are hashed with **Argon2** (resistant to brute-force attacks)
+- Password reset tokens are single-use and expire after 30 minutes
+- JWT tokens expire after 6 hours
+- Never commit your `.env` file — it is listed in `.gitignore`
+- The `users.json` file contains hashed passwords — also excluded from git
+
+
+---
 # 🎯 Skills Demonstrated
 
 - Python programming
