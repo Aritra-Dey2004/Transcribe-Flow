@@ -254,6 +254,24 @@ Discussion about project planning and execution timeline.
 - Web application architecture
 
 ---
+## 🙋 FAQ
+
+**Q: The app loads but transcription never completes.**
+A: Make sure `ffmpeg` is installed and accessible in your system PATH.
+
+**Q: I'm not receiving the password reset email.**
+A: Double-check your `SMTP_PASSWORD` is a Gmail App Password (not your account password), and that 2-Step Verification is enabled on your Google account.
+
+**Q: Can I use a different email provider?**
+A: Yes — update `SMTP_HOST` and `SMTP_PORT` in your `.env` to match your provider (e.g. Outlook uses `smtp.office365.com` on port `587`).
+
+**Q: The BART model takes a long time to load.**
+A: The model (~1.6 GB) is loaded into memory at startup. This is a one-time cost per server restart. Consider running on a machine with at least 4 GB RAM.
+
+**Q: How do I deploy this to production?**
+A: Use a WSGI server like **Gunicorn** behind **Nginx**, set `APP_BASE_URL` to your domain in `.env`, and use HTTPS so that reset links are secure.
+
+---
 
 # 👨‍💻 Author
 
