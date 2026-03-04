@@ -26,17 +26,22 @@ This project demonstrates real-world implementation of:
 
 ---
 
-# ✨ Features
+## ✨ Features
 
-- 🎙️ Audio transcription using Whisper AI
-- 🌍 Multilingual transcription and English translation
-- 🧠 Automatic AI-powered summarization
-- 📄 Export transcript as TXT and PDF
-- ⏱️ Timestamp support
-- 🌐 User-friendly web interface
-- 💾 Local file storage
+| Feature | Details |
+|---|---|
+| 🎙️ **Transcription** | Powered by OpenAI Whisper (`base` model) with timestamped segments |
+| 🤖 **AI Summarization** | Facebook BART large-CNN model condenses long audio into key points |
+| 🌍 **Translation** | Translate transcript + summary into 8 languages on the fly |
+| 📄 **Export** | Download results as formatted TXT or PDF (with multi-language font support) |
+| 🔐 **Auth** | Register & login via **email or phone number** |
+| 🔑 **Password Reset** | Secure reset link sent to registered email (30-minute expiry) |
+| 💪 **Password Strength** | Live strength meter enforcing length, uppercase & special character rules |
+| 📜 **History** | Browse, replay, and delete previously uploaded files |
+| 🤖 **Robot Mascot** | Interactive eye-tracking bot with star-eye animation |
 
 ---
+
 
 # 🧠 System Architecture
 
