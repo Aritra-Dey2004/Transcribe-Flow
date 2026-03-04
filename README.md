@@ -85,16 +85,26 @@ Transcribe-Flow/
 
 ---
 
-# ⚙️ Technology Stack
+## 🖥️ Tech Stack
 
-| Layer | Technology |
-|------|------------|
-| Frontend | HTML, CSS, JavaScript |
-| Backend | Flask (Python) |
-| AI Model | Whisper |
-| NLP | HuggingFace Transformers |
-| File Export | FPDF |
-| Storage | Local filesystem |
+**Backend**
+- [Flask](https://flask.palletsprojects.com/) — web framework
+- [OpenAI Whisper](https://github.com/openai/whisper) — speech-to-text
+- [HuggingFace Transformers](https://huggingface.co/facebook/bart-large-cnn) — BART summarization
+- [deep-translator](https://github.com/nidhaloff/deep-translator) — Google Translate wrapper
+- [FPDF2](https://py-fpdf2.readthedocs.io/) — PDF generation
+- [PassLib + Argon2](https://passlib.readthedocs.io/) — password hashing
+- [PyJWT](https://pyjwt.readthedocs.io/) — JWT authentication tokens
+- [python-dotenv](https://github.com/theskumar/python-dotenv) — environment variable management
+
+**Frontend**
+- Vanilla HTML / CSS / JavaScript
+- [Vanta.js](https://www.vantajs.com/) — animated wave background
+- [SweetAlert2](https://sweetalert2.github.io/) — styled modals & alerts
+
+**Storage**
+- `users.json` — lightweight file-based user database
+- `uploads/` — local folder for audio + transcript files
 
 ---
 
