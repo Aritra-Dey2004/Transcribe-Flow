@@ -292,6 +292,12 @@ BTech Computer Science (Data Science) Student
 
 ---
 
-# 📜 License
+## 📄 License
 
-MIT License
+This project is open source and available under the [MIT License](LICENSE).
+
+---
+
+<div align="center">
+  <strong>Built with ❤️ using Flask + Whisper + BART</strong>
+</div>
