@@ -1,5 +1,15 @@
+# Virtual Environments
 venv/
-__pycache__/
+.venv/
+
+# Security & Secrets
 .env
+secrets.json
+
+# Project-Specific Files
 uploads/
+users.json
+
+# Python Cache
+__pycache__/
 *.pyc
