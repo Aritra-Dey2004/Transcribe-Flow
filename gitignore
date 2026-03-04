@@ -1,15 +1,28 @@
-# Virtual Environments
+# ==========================================
+# 1. Virtual Environments
+# ==========================================
 venv/
-.venv/
+.venv3.10/
 
-# Security & Secrets
+# ==========================================
+# 2. Security & Secrets (CRITICAL)
+# ==========================================
 .env
-secrets.json
 
-# Project-Specific Files
-uploads/
+# ==========================================
+# 3. Project-Specific Data (CRITICAL)
+# ==========================================
+
+transcripts/
+
+# Do not upload your local database containing user info
 users.json
 
-# Python Cache
+# ==========================================
+# 4. Python Cache & IDE Files
+# ==========================================
 __pycache__/
+.vscode/
 *.pyc
+*.pyo
+*.pyd
