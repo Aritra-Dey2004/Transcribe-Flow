@@ -110,48 +110,66 @@ Transcribe-Flow/
 
 # 🛠️ Installation & Setup
 
-## Clone Repository
+## 🚀 Getting Started
 
-```
-git clone https://github.com/Aritra-Dey2004/Transcribe-Flow.git
-cd Transcribe-Flow
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/your-username/transcribeflow.git
+cd transcribeflow
 ```
 
-## Create Virtual Environment
+### 2. Create & activate a virtual environment
 
-```
+```bash
+# Windows
 python -m venv venv
-```
-
-Activate environment:
-
-Windows:
-```
 venv\Scripts\activate
-```
 
-Linux/Mac:
-```
+# macOS / Linux
+python -m venv venv
 source venv/bin/activate
 ```
 
-## Install Dependencies
+### 3. Install dependencies
 
-```
+```bash
 pip install -r requirements.txt
 ```
 
-## Run Application
+> **Note:** Whisper also requires [ffmpeg](https://ffmpeg.org/download.html) to be installed on your system.
+> - **Windows:** `winget install ffmpeg` or download from the website
+> - **macOS:** `brew install ffmpeg`
+> - **Linux:** `sudo apt install ffmpeg`
 
+### 4. Set up environment variables
+
+Copy the example file and fill in your values:
+
+```bash
+cp .env.example .env
 ```
+
+Open `.env` and edit:
+
+```env
+SMTP_HOST=smtp.gmail.com
+SMTP_PORT=587
+SMTP_USER=your_email@gmail.com
+SMTP_PASSWORD=your_16_char_app_password
+SMTP_FROM=your_email@gmail.com
+APP_BASE_URL=http://127.0.0.1:5000
+```
+
+> **Gmail setup:** Go to **Google Account → Security → 2-Step Verification → App Passwords** and generate a 16-character app password. Use that as `SMTP_PASSWORD` — never your actual Gmail password.
+
+### 5. Run the app
+
+```bash
 python app.py
 ```
 
-Open browser:
-
-```
-http://127.0.0.1:5000
-```
+Visit **[http://127.0.0.1:5000](http://127.0.0.1:5000)** in your browser.
 
 ---
 
