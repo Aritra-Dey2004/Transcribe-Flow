@@ -116,7 +116,7 @@ Transcribe-Flow/
 
 ```bash
 git clone https://github.com/your-username/transcribeflow.git
-cd transcribeflow
+cd TranscribeFlow
 ```
 
 ### 2. Create & activate a virtual environment
